@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'docker run -t -i python-imdb'
+                sh 'python main.py'
             }
         }
     }
